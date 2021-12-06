@@ -74,18 +74,6 @@ GrandFrame::GrandFrame(const wxString& title)
 	Center();
 	m_imagePanel->initImage(defaultWallpaper);
 
-	wxAboutDialogInfo aboutInfo;
-	aboutInfo.SetName("Просмотрщик изображений");
-	aboutInfo.SetVersion("1.1");
-	const wxString desc = "Моя первая пробная программа на wxWidgets для просмотра изображений. Открывает файлы jpeg, png, bmp И выводит изображение на экран";
-	aboutInfo.SetDescription(desc);
-	aboutInfo.SetCopyright("27.11.2021");
-	aboutInfo.SetWebSite("http://myapp.org");
-	aboutInfo.AddDeveloper("ORS");
-	wxAboutBox(aboutInfo);
-
-
-
 }
 
 
