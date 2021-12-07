@@ -59,7 +59,6 @@ void ImagePanel::updateImage() {
 		w / scrollStep,
 		h / scrollStep);
 
-	//m_sw->Scroll(50, 10); // Немного прокрутить полоски
 }
 
 void ImagePanel::rotateImageLeft() {

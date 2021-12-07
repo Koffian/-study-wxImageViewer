@@ -22,5 +22,5 @@ public:
 	wxStaticText* stSizeVal;
 };
 
-const int propsIndent = 50; // Отступ вправо для создания пустого места
-const int leftIndent = 10; // Отступ cлева
+const int propsIndent = 50; // right offset for empty space
+const int leftIndent = 10; // left offset to make empty space

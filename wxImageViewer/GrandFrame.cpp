@@ -5,7 +5,6 @@ GrandFrame::GrandFrame(const wxString& title)
 	wxImage::AddHandler(new wxJPEGHandler);
 	wxImage::AddHandler(new wxPNGHandler);
 
-
 	grandPanel = new wxPanel(this, wxID_ANY);
 
 	wxBoxSizer* tmpVboxLeft = new wxBoxSizer(wxVERTICAL);
@@ -16,8 +15,6 @@ GrandFrame::GrandFrame(const wxString& title)
 
 	m_gdir = new wxGenericDirCtrl(grandPanel, wxID_DIRCTRL, wxT(""), wxPoint(-1, -1),
 									wxSize(300, 400), wxFD_CHANGE_DIR);
-
-	//m_gdir->SetFilter("*.jpg");
 
 
 	m_imagePanel = new ImagePanel(grandPanel);
@@ -51,8 +48,6 @@ GrandFrame::GrandFrame(const wxString& title)
 	Connect(wxID_OPEN, wxEVT_COMMAND_MENU_SELECTED,
 		wxCommandEventHandler(GrandFrame::OnOpen));
 	
-	//Connect(m_gdir->GetTreeCtrl()->GetId(), wxEVT_COMMAND_TREE_ITEM_ACTIVATED,
-	//	wxCommandEventHandler(GrandFrame::OnGenericDirOpen));
 
 	Connect(m_gdir->GetId(), wxEVT_DIRCTRL_FILEACTIVATED,
 		wxCommandEventHandler(GrandFrame::OnGenericDirOpen));
@@ -99,7 +94,6 @@ void GrandFrame::OnGenericDirOpen(wxCommandEvent& WXUNUSED(event)) {
 	wxTreeCtrl* tree = m_gdir->GetTreeCtrl();
 	wxString fileName = m_gdir->GetFilePath();
 	if (fileName.empty()) { // Открыть и развернуть папку
-		//tree->Toggle(tree->GetSelection());
 		return;
 	}
 

@@ -24,8 +24,6 @@ void MyMemoryPanel::appendImage(wxString filename) {
 	wxDateTime now = wxDateTime::Now();
 	wxString date = now.Format();
 
-	//m_view->InsertItem(cap, date);
-	//m_view->SetItemData(cap, cap);
 
 	int index = m_view->GetItemCount();
 

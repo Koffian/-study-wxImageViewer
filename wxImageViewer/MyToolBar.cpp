@@ -12,9 +12,9 @@ MyToolBar::MyToolBar(wxPanel* parent)
 	m_scale = new wxSlider(this, wxID_SCALE, this->imageScale, 0, 500,
 		wxDefaultPosition, wxDefaultSize, wxSL_LABELS);
 
-	hbox->Add(m_rotateButtonLeft, 0, wxEXPAND | wxALIGN_CENTER);
-	hbox->Add(m_rotateButtonRight, 0, wxEXPAND | wxALIGN_CENTER);
-	hbox->Add(m_scale, 1, wxEXPAND | wxALIGN_RIGHT);
+	hbox->Add(m_rotateButtonLeft, 0, wxEXPAND);
+	hbox->Add(m_rotateButtonRight, 0, wxEXPAND);
+	hbox->Add(m_scale, 1, wxEXPAND);
 
 	this->SetSizer(hbox);
 }
