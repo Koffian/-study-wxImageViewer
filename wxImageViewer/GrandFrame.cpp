@@ -1,11 +1,17 @@
 #include "GrandFrame.h"
 GrandFrame::GrandFrame(const wxString& title)
-	: wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(800, 600))
+	: wxFrame(	NULL,
+				wxID_ANY,
+				title,
+				wxDefaultPosition,
+				wxSize(800, 600)
+	)
 {
 	wxImage::AddHandler(new wxJPEGHandler);
 	wxImage::AddHandler(new wxPNGHandler);
 
 	grandPanel = new wxPanel(this, wxID_ANY);
+	grandPanel->SetBackgroundColour(defaultColor);
 
 	wxBoxSizer* tmpVboxLeft = new wxBoxSizer(wxVERTICAL);
 	wxBoxSizer* tmpVboxRight = new wxBoxSizer(wxVERTICAL);
@@ -14,14 +20,11 @@ GrandFrame::GrandFrame(const wxString& title)
 
 
 	m_gdir = new wxGenericDirCtrl(grandPanel, wxID_DIRCTRL, wxT(""), wxPoint(-1, -1),
-									wxSize(300, 400), wxFD_CHANGE_DIR);
-
-
+								wxSize(300, 400), wxFD_CHANGE_DIR);
+	//m_outliner = new MyOutliner(grandPanel);
 	m_imagePanel = new ImagePanel(grandPanel);
 	m_propsPanel = new ImagePropsPanel(grandPanel);
 	m_memPanel = new MyMemoryPanel(grandPanel);
-
-	m_memPanel->SetBackgroundColour(wxT("#0f0f0f"));
 
 	m_toolBar = new MyToolBar(grandPanel);
 
@@ -110,6 +113,8 @@ void GrandFrame::OnRotateLeft(wxCommandEvent& WXUNUSED(event)) {
 
 void GrandFrame::OnRotateRight(wxCommandEvent& WXUNUSED(event)) {
 	m_imagePanel->rotateImageRight();
+	m_gdir->SetFilter(wxT("*.jpg"));
+	m_gdir->Update();
 }
 
 void GrandFrame::OnScale(wxScrollEvent& WXUNUSED(event)) {

@@ -9,6 +9,7 @@
 #include "ImagePropsPanel.h"
 #include "MyMemoryPanel.h"
 #include "wx/aboutdlg.h"
+#include "MyOutliner.h"
 
 class GrandFrame : public wxFrame
 {
@@ -21,10 +22,11 @@ public:
 	MyMenuBar* m_menuBar;
 	ImagePanel* m_imagePanel;
 	ImagePropsPanel* m_propsPanel;
-	MyOutliner* m_outliner;
 	wxGenericDirCtrl* m_gdir;
 	MyMemoryPanel* m_memPanel;
 	MyToolBar* m_toolBar;
+	MyOutliner* m_outliner;
+
 
 	void OnQuit(wxCommandEvent& WXUNUSED(event));
 	void OnOpen(wxCommandEvent& WXUNUSED(event));
@@ -39,6 +41,6 @@ public:
 const int borderSize = 10;
 const int wxID_DIRCTRL = 6;
 
-const wxColour maroon = wxColour("#A66E00");
+const wxColour defaultColor = wxColour("#E7F5FF");
 
 const wxString defaultWallpaper = "Images\\HighResPicture.jpg";

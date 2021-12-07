@@ -6,7 +6,8 @@ MyMemoryPanel::MyMemoryPanel(wxPanel* parent)
 	m_parent = parent;
 	vbox = new wxBoxSizer(wxVERTICAL);
 
-	wxButton* tmp_btn = new wxButton(this, wxID_ANY, wxT("Последние изображения"),
+	wxStaticText* tmp_btn = new wxStaticText(this, 
+		wxID_ANY, wxT("Последние изображения"),
 		wxDefaultPosition,
 		wxDefaultSize);
 

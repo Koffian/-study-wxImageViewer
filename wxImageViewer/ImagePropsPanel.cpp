@@ -10,25 +10,25 @@ ImagePropsPanel::ImagePropsPanel(wxPanel* parent)
 		wxDefaultSize);
 
 	stName = new wxStaticText(this, wxID_ANY, wxT(" Название:"), wxDefaultPosition);
-	stNameVal = new wxStaticText(this, wxID_ANY, wxT("Изображение"), wxDefaultPosition);
+	stNameVal = new wxStaticText(this, wxID_ANY, wxT(""), wxDefaultPosition);
 	wxBoxSizer* hboxName = new wxBoxSizer(wxHORIZONTAL);
 	hboxName->Add(stName, 0, wxALIGN_LEFT | wxRIGHT, propsIndent);
 	hboxName->Add(stNameVal, 0, wxEXPAND);
 
 	stType = new wxStaticText(this, wxID_ANY, wxT("ТИП:"), wxDefaultPosition);
-	stTypeVal = new wxStaticText(this, wxID_ANY, wxT("JPEG"), wxDefaultPosition);
+	stTypeVal = new wxStaticText(this, wxID_ANY, wxT(""), wxDefaultPosition);
 	wxBoxSizer* hboxType = new wxBoxSizer(wxHORIZONTAL);
 	hboxType->Add(stType, 0, wxALIGN_LEFT | wxRIGHT, propsIndent);
 	hboxType->Add(stTypeVal, 0);
 
 	stSrc = new wxStaticText(this, wxID_ANY, wxT("Расположение:"), wxDefaultPosition);
-	stSrcVal = new wxStaticText(this, wxID_ANY, wxT("/home:"), wxDefaultPosition);
+	stSrcVal = new wxStaticText(this, wxID_ANY, wxT(""), wxDefaultPosition);
 	wxBoxSizer* hboxSrc = new wxBoxSizer(wxHORIZONTAL);
 	hboxSrc->Add(stSrc, 0, wxALIGN_LEFT | wxRIGHT, propsIndent);
 	hboxSrc->Add(stSrcVal, 0);
 
 	stSize = new wxStaticText(this, wxID_ANY, wxT("Размер:"), wxDefaultPosition);
-	stSizeVal = new wxStaticText(this, wxID_ANY, wxT("7.24 Мб"), wxDefaultPosition);
+	stSizeVal = new wxStaticText(this, wxID_ANY, wxT(""), wxDefaultPosition);
 	wxBoxSizer* hboxSize = new wxBoxSizer(wxHORIZONTAL);
 	hboxSize->Add(stSize, 0, wxALIGN_LEFT | wxRIGHT, propsIndent);
 	hboxSize->Add(stSizeVal, 0);

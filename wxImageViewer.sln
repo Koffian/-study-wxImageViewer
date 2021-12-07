@@ -11,12 +11,6 @@ Global
 		Debug|x86 = Debug|x86
 		DynamicLinkingRelease|x64 = DynamicLinkingRelease|x64
 		DynamicLinkingRelease|x86 = DynamicLinkingRelease|x86
-		MyNewRelease|x64 = MyNewRelease|x64
-		MyNewRelease|x86 = MyNewRelease|x86
-		MyRelease|x64 = MyRelease|x64
-		MyRelease|x86 = MyRelease|x86
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 		StaticLinkingRelease|x64 = StaticLinkingRelease|x64
 		StaticLinkingRelease|x86 = StaticLinkingRelease|x86
 	EndGlobalSection
@@ -29,18 +23,6 @@ Global
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.DynamicLinkingRelease|x64.Build.0 = DynamicLinkingRelease|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.DynamicLinkingRelease|x86.ActiveCfg = DynamicLinkingRelease|Win32
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.DynamicLinkingRelease|x86.Build.0 = DynamicLinkingRelease|Win32
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x64.ActiveCfg = MyNewRelease|x64
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x64.Build.0 = MyNewRelease|x64
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x86.ActiveCfg = MyNewRelease|Win32
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x86.Build.0 = MyNewRelease|Win32
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyRelease|x64.ActiveCfg = MyRelease|x64
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyRelease|x64.Build.0 = MyRelease|x64
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyRelease|x86.ActiveCfg = MyRelease|Win32
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyRelease|x86.Build.0 = MyRelease|Win32
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Release|x64.ActiveCfg = Release|x64
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Release|x64.Build.0 = Release|x64
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Release|x86.ActiveCfg = Release|Win32
-		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Release|x86.Build.0 = Release|Win32
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.StaticLinkingRelease|x64.ActiveCfg = StaticLinkingRelease|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.StaticLinkingRelease|x64.Build.0 = StaticLinkingRelease|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.StaticLinkingRelease|x86.ActiveCfg = StaticLinkingRelease|Win32
