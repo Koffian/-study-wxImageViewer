@@ -16,7 +16,7 @@ ImagePanel::ImagePanel(wxPanel* parent)
 
 bool ImagePanel::initImage(const wxString filename) {
 	wxBitmap tmp = wxBitmap(filename, wxBITMAP_TYPE_ANY);
-	if (tmp.IsOk() == false) //"not " is not working
+	if (not tmp.IsOk())
 		return false;
 	bmp = tmp;
 

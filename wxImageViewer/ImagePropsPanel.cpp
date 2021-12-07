@@ -13,8 +13,8 @@ ImagePropsPanel::ImagePropsPanel(wxPanel* parent)
 	//wxStaticLine* sl2 = new wxStaticLine(this, wxID_ANY, wxDefaultPosition,
 	//	wxSize(220, 1));
 
-	stName = new wxStaticText(this, wxID_ANY, wxT("Название:"), wxDefaultPosition);
-	stNameVal = new wxStaticText(this, wxID_ANY, wxT("ИЗОБРАЖЕНИЕ"), wxDefaultPosition);
+	stName = new wxStaticText(this, wxID_ANY, wxT("(dynamic) Название:"), wxDefaultPosition);
+	stNameVal = new wxStaticText(this, wxID_ANY, wxT("Изображение"), wxDefaultPosition);
 	wxBoxSizer* hboxName = new wxBoxSizer(wxHORIZONTAL);
 	hboxName->Add(stName, 0, wxALIGN_LEFT | wxRIGHT, propsIndent);
 	hboxName->Add(stNameVal, 0, wxEXPAND | wxALIGN_RIGHT);

@@ -9,16 +9,30 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		DynamicLinkingRelease|x64 = DynamicLinkingRelease|x64
+		DynamicLinkingRelease|x86 = DynamicLinkingRelease|x86
+		MyNewRelease|x64 = MyNewRelease|x64
+		MyNewRelease|x86 = MyNewRelease|x86
 		MyRelease|x64 = MyRelease|x64
 		MyRelease|x86 = MyRelease|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
+		StaticLinkingRelease|x64 = StaticLinkingRelease|x64
+		StaticLinkingRelease|x86 = StaticLinkingRelease|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Debug|x64.ActiveCfg = Debug|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Debug|x64.Build.0 = Debug|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Debug|x86.ActiveCfg = Debug|Win32
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Debug|x86.Build.0 = Debug|Win32
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.DynamicLinkingRelease|x64.ActiveCfg = DynamicLinkingRelease|x64
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.DynamicLinkingRelease|x64.Build.0 = DynamicLinkingRelease|x64
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.DynamicLinkingRelease|x86.ActiveCfg = DynamicLinkingRelease|Win32
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.DynamicLinkingRelease|x86.Build.0 = DynamicLinkingRelease|Win32
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x64.ActiveCfg = MyNewRelease|x64
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x64.Build.0 = MyNewRelease|x64
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x86.ActiveCfg = MyNewRelease|Win32
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyNewRelease|x86.Build.0 = MyNewRelease|Win32
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyRelease|x64.ActiveCfg = MyRelease|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyRelease|x64.Build.0 = MyRelease|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.MyRelease|x86.ActiveCfg = MyRelease|Win32
@@ -27,6 +41,10 @@ Global
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Release|x64.Build.0 = Release|x64
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Release|x86.ActiveCfg = Release|Win32
 		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.Release|x86.Build.0 = Release|Win32
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.StaticLinkingRelease|x64.ActiveCfg = StaticLinkingRelease|x64
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.StaticLinkingRelease|x64.Build.0 = StaticLinkingRelease|x64
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.StaticLinkingRelease|x86.ActiveCfg = StaticLinkingRelease|Win32
+		{7C8CA163-8B5F-4A4C-929A-D1799F2D62F4}.StaticLinkingRelease|x86.Build.0 = StaticLinkingRelease|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
